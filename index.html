@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>gifTastic</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Giphy API Use-Case</title>
+		
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      	<a class="navbar-brand" href="#">
+			      	<span class="glyphicon glyphicon-picture"></span>
+			      	<span class="glyphicon glyphicon-arrow-right"></span>
+			        <span class="glyphicon glyphicon-expand"></span>
+			        <p>GIFTASTIC</p>
+		    	</a>
+
+		      	<form class="navbar-form navbar-right" role="search">
+				  <div class="form-group">
+				  	<span class="navText">Tag: </span>
+				    <input type="text" class="form-control" id="searchTag" placeholder="Search">
+				  </div>
+
+					<span class="navText">Limits: </span>
+					<select class="form-control" id="limit">
+					    <option>1</option>
+					    <option>5</option>
+					    <option>10</option>
+					    <option selected>20</option>
+					    <option>30</option>
+					    <option>40</option>
+					    <option>50</option>
+				  	</select>
+
+				  <span class="navText">Ratings: </span>
+				  <select class="form-control" id="rating">
+					    <option>Y</option>
+					    <option>G</option>
+					    <option selected>PG</option>
+					    <option>PG-13</option>
+					    <option>R</option>
+				  	</select>
+				  <button type="submit" class="search btn btn-default" id="submit">Submit</button>
+				  <button type="clear" class="search btn btn-default" id="clear">Clear</button>
+				  <span>|</span>
+				  <button type="button" tag="trending" class="tag trending btn btn-default" id="trending">Trending</button>
+				  <button type="button" tag="random" class="tag random btn btn-default" id="random">Random</button>
+				</form>
+
+		    </div>
+		  </div>
+		</nav>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="panelContainer panel panel-default">
+					<div class="panel-body" id="tagPanel">
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="results">
+		<!-- 	  <div class="panel panel-default">
+			  		 <div class="panel-heading">Search Parameter</div>
+ 					 <div class="panel-body"><img class="gif" src="https://media4.giphy.com/media/R2jbpBrAAOmOs/200w_s.gif?response_id=594dd8e4a089f351e09e7320"></div>
+			  </div> -->
+
+			</div>
+		</div>
+        
+		<script src="assets/javascript/app.js"></script>
+	</body>
+
+</html>
